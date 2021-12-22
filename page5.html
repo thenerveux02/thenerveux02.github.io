@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concours</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script language="JavaScript">
+    function retour()
+    {
+       alert("Vos informations et vos réponses ont bien été enregistrées. Cependant, nous ne sommes pas encore en mesure de les traiter. Une fois vos informations traitées, vous serez prévenus par mail.")
+    }
+  </script>
+
+</head>
+
+<body class="background">
+<nav>
+    <div class="conteneur-nav">
+        <label class="derouler" for="mobile">Dérouler / Fermer le menu</label>
+        <input type="checkbox" id="mobile" role="button">
+        <ul>
+            <li><img class="logomenu" src="img/logoF1.png" alt="Logo F1"></li>
+            <li><a href="index.html">Accueil &ensp;</a></li>
+
+            <li class="deroulant"><a href="page2.html">Qu'est ce que la F1 ? &ensp;</a>
+                <ul class="sous">
+                    <li><a href="page2.html#sport">Le sport</a></li>
+                    <li><a href="page2.html#histoire">Quelques faits historiques</a></li>
+                </ul>
+            </li>
+
+            <li class="deroulant"><a href="page3.html">Les pilotes et les transferts &ensp;</a>
+                <ul class="sous">
+                    <li><a href="page3.html#pilote">Les pilotes</a></li>
+                    <li><a href="page3.html#transfert">Les transferts</a></li>
+                </ul>
+            </li>
+
+            <li class="deroulant"><a href="page4.html">Les circuits et légendes &ensp;</a>
+                <ul class="sous">
+                    <li><a href="page4.html#bestcircuit">Les circuits emblématiques</a></li>
+                    <li><a href="page4.html#legende">Les légendes</a></li>
+                </ul>
+            </li>
+            <li><a href="page5.html">Concours </a></li>
+        </ul>
+    </div>
+</nav>
+
+    <form class="backgroundtransparent" action="#" method="post">
+        <h1>Concours</h1> <br>
+        <fieldset>
+            <legend>Question</legend> <br>
+            <div class="quest"><label for="vainqueur">Qui a remporté le championnat du monde le 12 décembre 2021 ?</label></div> <br>
+            <div class="quest"><input type="radio" name="vainqueur" value="lewis" checked>
+                <label for="vainqueur">Lewis Hamilton</label>
+            </div>
+            <div class="quest"><input type="radio" name="vainqueur" value="verstappen">
+                <label for="vainqueur">Max Verstappen</label>
+            </div>
+            <div class="quest"><input type="radio" name="vainqueur" value="bottas">
+                <label for="vainqueur">Valterri Bottas</label>
+            </div>
+
+            <br><br>
+
+            <div class="quest"><label class="label" for="premiergp">Sur quel circuit s'est déroulé le premier Grand Prix de Formule 1 ?</label></div>
+            <div class="quest">
+                <br>
+                <select name="premiergp">
+                    <option value="silver">Silverstone</option>
+                    <option value="monaco">Monaco</option>
+                    <option value="spa">Spa-Francorchamps</option>
+                </select>
+            </div>
+
+            <br><br>
+
+            <div class="quest"><label class="label" for="origine">De quelle origine est Michael Schumacher ?</label></div>
+            <div class="quest">
+                <br>
+                <select name="origine">
+                    <option value="francais">Français</option>
+                    <option value="allemand">Allemand</option>
+                    <option value="italien">Italien</option>
+                    <option value="danois">Danois</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <br><br><br><br><br>
+            <div class="quest"><label for="ecuriebottas">Pour quelle écurie Bottas courra t'il la saison prochaine ?</label></div> <br>
+            <div class="quest"><input type="radio" name="ecuriebottas" value="williams" checked>
+                <label for="vainqueur">Williams Racing</label>
+            </div>
+            <div class="quest"><input type="radio" name="ecuriebottas" value="mercedes">
+                <label for="vainqueur">Mercedes-AMG Petronas F1 Team </label>
+            </div>
+            <div class="quest"><input type="radio" name="ecuriebottas" value="alfa">
+                <label for="vainqueur">Alfa Romeo F1 Team Orlen</label>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Informations personelles</legend>
+
+            <br><br>
+
+            <label class="nomprenom" for="nom">Nom :</label>
+            <input class="sizeinput" name="nom" type="text" placeholder="Indiquez votre nom" required>
+
+            <br><br><br>
+
+            <label class="nomprenom" for="prenom">Prénom :</label>
+            <input class="sizeinput" name="prenom" type="text" placeholder="Indiquez votre prénom" required>
+
+            <br><br><br>
+
+            <label class="nomprenom" for="age">Âge :</label>
+            <input class="sizeinput" name="age" type="number" value="13" required>
+
+            <br><br><br>
+
+            <label class="nomprenom" for="sexe">Genre :</label>
+            <select name="sexe">
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autres">Autres</option>
+            </select>
+
+<br><br><br>
+
+            <label class="nomprenom"  for="email">Votre email :</label>
+            <input type="email" placeholder="xyz@gmail.com" required>
+
+            <br><br><br>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+<legend>Confirmation</legend>
+<p class="descriptiontirage">Si vous souhaitez participer au concours, il ne vous reste plus qu'a validé votre participation. Si vous avez 2 sur 4 aux questions ci-dessus, vous participerez automatiquement au tirage au sort finale.</p> <br><br>
+<div class="boutonform"> 
+<input class="message" type="submit" value="Valider" onclick="retour()"/>
+<input class="effacer" type="reset" value="Effacer" />
+</div>
+        </fieldset>
+    </form>
+
+
+
+    <br><br><br><br><br>
+    <div class="scroll_to_top">
+        <a href="#top"><img src="img/scrolltop.png" alt="Retourner en haut" /></a>
+    </div>
+    <footer>
+
+<p>Ce site à été conçu par Castin Matteo © 2021 - Formule 1 <br> Le concours à la dernière page est un concours factice</p>
+<p><a href="background.html">Aperçu de l'image de fond</a></p>
+
+
+
+</footer>
+</body>
+
+</html>
